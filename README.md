@@ -14,7 +14,6 @@ The "run_analysis.R" script requires the "dplyr" and "reshape2" packages. It cre
       * subject_test.txt
       * X_test.txt
       * y_test.txt
-      
       It assigns the data to the following variables, with the specified parameters:
       * subject_test: a 2947x1 data frame with a factor variable with column name "Subject"
       * X_test: a 2947x561 data frame with integer variables with the descriptive column names extracted in step 2

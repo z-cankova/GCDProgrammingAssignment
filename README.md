@@ -1,5 +1,4 @@
-R Script for Human Activity Recognition Using Smartphones Tidy Data Summary
-========================
+#R Script for Human Activity Recognition Using Smartphones Tidy Data Summary
 
 The "run_analysis.R" script provided in this repository takes in data from the Human Activity Recognition Using Smartphones Dataset and returns a tidy data summary of the mean values for the mean and standard deviation features grouped by subject and activity. Refer to the provided code book for further explanation about the experimental setup and the data contained in the original and tidy data sets. 
 
@@ -12,13 +11,14 @@ The "run_analysis.R" script requires the "dplyr" and "reshape2" packages. It cre
 3. Reads activity names from "activity_labels.txt" file using read.table(). These will be used to assign descriptive names to the activities listed in the y_test and y_train files.
 
 4. Reads movement data for the test group from the following files using read.table():
-subject_test.txt
-X_test.txt
-y_test.txt
-It assigns the data to the following variables, with the specified parameters:
-subject_test: a 2947x1 data frame with a factor variable with column name "Subject"
-X_test: a 2947x561 data frame with integer variables with descriptive column names extracted in step 2
-y_test: a 2947x1 data frame with an integer variable with column name "Activity"
+      * subject_test.txt
+      * X_test.txt
+      * y_test.txt
+      
+      It assigns the data to the following variables, with the specified parameters:
+      * subject_test: a 2947x1 data frame with a factor variable with column name "Subject"
+      * X_test: a 2947x561 data frame with integer variables with the descriptive column names extracted in step 2
+      * y_test: a 2947x1 data frame with an integer variable with column name "Activity"    
 
 5. Reads movement data for the train group using the corresponding train files and assigns them to train variables using the exact methods used for the test data.
 
